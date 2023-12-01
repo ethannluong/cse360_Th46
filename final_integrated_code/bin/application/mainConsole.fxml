@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sceneController">
+   <children>
+      <Label layoutX="238.0" layoutY="14.0" text="Effort Logger Console">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="57.0" text="Clock is Stopped" textFill="RED">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="97.0" text="1. When you start a new activity, press the &quot;Start an Activity&quot; button.">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="126.0" mnemonicParsing="false" text="Start an Activity">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="28.0" layoutY="165.0" text="2. Select the project, life cycle step, effort category, and deliverable from the following lists:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="192.0" text="Project:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="192.0" text="Life Cycle Step:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="257.0" text="Effort Category:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="257.0" text="Deliverable:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="28.0" layoutY="218.0" prefWidth="150.0" />
+      <ComboBox layoutX="242.0" layoutY="218.0" prefWidth="150.0" />
+      <ComboBox layoutX="28.0" layoutY="276.0" prefWidth="150.0" />
+      <ComboBox layoutX="242.0" layoutY="276.0" prefWidth="150.0" />
+      <Label layoutX="28.0" layoutY="314.0" text="3. Press the &quot;Stop this Activity&quot; to generate an effort log entry using the attributes above.">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="342.0" mnemonicParsing="false" text="Stop this Activity">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="28.0" layoutY="389.0" text="4. Unless you are done for the day, it is best to perform steps 1 and 2 above before resuming above.">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="29.0" layoutY="421.0" mnemonicParsing="false" onAction="#sceneTwo" text="Effort Log Editor">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="178.0" layoutY="421.0" mnemonicParsing="false" onAction="#sceneThree" text="Defect Log Console">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="340.0" layoutY="421.0" mnemonicParsing="false" onAction="#scenceSix" text="Upload Log">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="445.0" layoutY="421.0" mnemonicParsing="false" text="Effort and Defect Logs">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="28.0" layoutY="464.0" text="5. Press the &quot;Planning Poker&quot; button for the planning poker session">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="29.0" layoutY="492.0" mnemonicParsing="false" onAction="#sceneFour" text="Planning Poker">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
