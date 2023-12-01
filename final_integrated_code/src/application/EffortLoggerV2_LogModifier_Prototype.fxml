@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.FileChooser?>
+<?import javafx.stage.DirectoryChooser?>
+<?import javafx.animation.PauseTransition?>
+<?import javafx.util.Duration?>
+
+<Pane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="application.EffortLoggerV2_LogModifier_Prototype">
+    <children>
+        <Label text="Input Log File:" layoutX="50.0" layoutY="50.0"/>
+        <TextField fx:id="inputFileText" layoutX="50.0" layoutY="70.0" prefWidth="300.0" editable="false"/>
+        <Label text="Main Log File:" layoutX="50.0" layoutY="100.0"/>
+        <TextField fx:id="outputLogBox" layoutX="50.0" layoutY="120.0" prefWidth="300.0" editable="false"/>
+        <Label text="Log Folder:" layoutX="50.0" layoutY="150.0"/>
+        <TextField fx:id="folderSelectBox" layoutX="50.0" layoutY="170.0" prefWidth="300.0" editable="false"/>
+        <CheckBox fx:id="personalDataCheckBox" text="Wipe Personal Data" layoutX="600.0" layoutY="100.0"/>
+        <Button text="Update Log" layoutX="600.0" layoutY="70.0" onAction="#handleUpdateLog"/>
+        <Button text="Create New Log" layoutX="550.0" layoutY="170.0" onAction="#handleCreateNewLog"/>
+        <Button text="Select File" layoutX="350.0" layoutY="70.0" onAction="#handleSelectInputFile"/>
+        <Button text="Select File" layoutX="350.0" layoutY="120.0" onAction="#handleSelectOutputFile"/>
+        <Button text="Select Folder" layoutX="350.0" layoutY="170.0" onAction="#handleSelectFolder"/>
+        <Button text="Return" layoutX="550.0" layoutY="200.0" onAction="#sceneOne"/>
+        <Label fx:id="notify" layoutX="200.0" layoutY="300.0"/>
+    </children>
+</Pane>
